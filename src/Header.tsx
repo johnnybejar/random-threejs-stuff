@@ -1,9 +1,15 @@
+import { Link } from "wouter";
+
 function Header() {
   return (
     <>
-      <ul className="navbar">
-        <li>Globe</li>
-        <li>Somethingidk</li>
+      <ul id="navbar">
+        <li className="nav-item">
+          <Link href="/globe">Globe</Link>
+        </li>
+        <li className="nav-item">
+          <Link href="/about">About</Link>
+        </li>
       </ul>
     </>
   );
